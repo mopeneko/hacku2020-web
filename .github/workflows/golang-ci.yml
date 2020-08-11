@@ -8,10 +8,10 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install api_gen
         run: |
-          go get -u golang.org/x/tools/cmd/goimports
-          go get -u github.com/go-generalize/api_gen/server_generator
+          GOROOT=$(pwd)/bin go get -u golang.org/x/tools/cmd/goimports
+          GOROOT=$(pwd)/bin go get -u github.com/go-generalize/api_gen/server_generator
       - name: Execute api_gen
-        run: ${GOPATH}/bin/server_generator ./controller
+        run: ../bin/server_generator ./controller
         working-directory: api
       - uses: reviewdog/action-golangci-lint@v1
         with:
