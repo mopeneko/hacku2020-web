@@ -6,6 +6,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Install api_gen
+        run: |
+        go get -u golang.org/x/tools/cmd/goimports
+        go get -u github.com/go-generalize/api_gen/server_generator
+      - name: Execute api_gen
+        run: server_generator ./controller
+        working_directory: api
       - uses: reviewdog/action-golangci-lint@v1
         with:
           github_token: ${{ secrets.github_token }}
