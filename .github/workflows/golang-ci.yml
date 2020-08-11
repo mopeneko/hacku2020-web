@@ -12,7 +12,7 @@ jobs:
           go get -u github.com/go-generalize/api_gen/server_generator
       - name: Execute api_gen
         run: server_generator ./controller
-        working_directory: api
+        working-directory: api
       - uses: reviewdog/action-golangci-lint@v1
         with:
           github_token: ${{ secrets.github_token }}
