@@ -1,9 +1,9 @@
-name: Golang CI
-on: [push, pull_request]
+name: reviewdog
+on: [pull_request]
 
 jobs:
-  test:
-    runs_on: ubuntu-latest
+  lint:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-go@v2
@@ -16,6 +16,10 @@ jobs:
       - name: Execute api_gen
         run: server_generator ./controller
         working-directory: api
-      - name: Run tests
-        run: go test -v ./...
-        working-directory: api
+      - uses: reviewdog/action-golangci-lint@v1
+        env:
+          GOROOT: ""
+        with:
+          github_token: ${{ secrets.github_token }}
+          golangci_lint_flags: "--config=../.github/.golangci.yml"
+          workdir: api
