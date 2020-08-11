@@ -6,7 +6,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-go@v2
+        with:
+          go-version: '^1.14.7'
+      - name: Install api_gen
+        run: |
+          go get -u golang.org/x/tools/cmd/goimports
+          go get -u github.com/go-generalize/api_gen/server_generator
+      - name: Execute api_gen
+        run: server_generator ./controller
+        working-directory: api
       - uses: reviewdog/action-golangci-lint@v1
+        env:
+          GOROOT: ""
         with:
           github_token: ${{ secrets.github_token }}
-          golangci_lint_flags: "--config=.github/.golangci.yml"
+          golangci_lint_flags: "--config=../.github/.golangci.yml"
+          workdir: api
