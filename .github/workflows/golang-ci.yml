@@ -8,8 +8,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install api_gen
         run: |
-          GOROOT=$(pwd)/bin go get -u golang.org/x/tools/cmd/goimports
-          GOROOT=$(pwd)/bin go get -u github.com/go-generalize/api_gen/server_generator
+          GOBIN=$(pwd)/bin go get -u golang.org/x/tools/cmd/goimports
+          GOBIN=$(pwd)/bin go get -u github.com/go-generalize/api_gen/server_generator
       - name: Execute api_gen
         run: ../bin/server_generator ./controller
         working-directory: api
