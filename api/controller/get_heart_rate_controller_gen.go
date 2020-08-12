@@ -4,6 +4,7 @@ package controller
 
 import (
 	"context"
+	"strconv"
 
 	"github.com/labstack/echo/v4"
 )
@@ -17,8 +18,8 @@ func NewGetHeartRateController() *GetHeartRateController {
 }
 
 // GetHeartRate
-// @Summary WIP
-// @Description WIP
+// @Summary Returns latest heart rate
+// @Description Returns heart rate which is set to *repository.HeartRateRepository
 // @Accept json
 // @Produce json
 // @Success 200 {object} GetHeartRateResponse
@@ -27,5 +28,11 @@ func NewGetHeartRateController() *GetHeartRateController {
 func (g *GetHeartRateController) GetHeartRate(
 	ctx context.Context, c echo.Context, req *GetHeartRateRequest,
 ) (res *GetHeartRateResponse, err error) {
-	panic("require implements.")
+	res = new(GetHeartRateResponse)
+
+	count := heartRateRepository.Get()
+
+	res.Status = true
+	res.Message = strconv.Itoa(int(count))
+	return
 }
