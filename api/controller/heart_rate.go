@@ -1,17 +1,26 @@
 package controller
 
+import "github.com/mopeneko/hacku2020-web/api/repository"
+
+var heartRateRepository *repository.HeartRateRepository
+
+func init() {
+	heartRateRepository = repository.NewHeartRateRepository()
+}
+
 type PostHeartRateRequest struct {
-	Count uint
+	Count uint `json:"count"`
 }
 
 type PostHeartRateResponse struct {
-	Status  bool
-	Message string
+	Status  bool   `json:"status"`
+	Message string `json:"message"`
 }
 
 type GetHeartRateRequest struct {
 }
 
 type GetHeartRateResponse struct {
-	Count uint
+	Status  bool   `json:"status"`
+	Message string `json:"message"`
 }
