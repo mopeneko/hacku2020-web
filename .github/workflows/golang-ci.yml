@@ -1,5 +1,8 @@
 name: Golang CI
-on: [push]
+on:
+  push:
+    paths:
+      - 'api/**'
 
 jobs:
   test:
