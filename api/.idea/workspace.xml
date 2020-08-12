@@ -6,65 +6,82 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:fix" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="477bd7e5-b35e-436a-ac36-c96b362e7303" name="Default Changelist" comment="" />
+    <list default="true" id="58e39966-6dff-4cdf-9039-a366d3599bd5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/api.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/repository/heart_rate_repository_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/hacku2020-web.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/watcherTasks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Go File" />
-      </list>
-    </option>
-  </component>
   <component name="GOROOT" path="/usr/lib/go" />
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$/.." value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1fwCvLwNcAUPRwBJ8DwP7XJrkCs" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1fzLM5sHCzAJMDWvanwxdZ10PAS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="ask.go.tool.to.install.GoImportsTaskConsumer" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
-  </component>
-  <component name="RunManager">
-    <configuration name="go build github.com/mopeneko/hacku2020-web/api" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="api" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/main.go" />
-      <package value="github.com/mopeneko/hacku2020-web/api" />
-      <directory value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Go Build.go build github.com/mopeneko/hacku2020-web/api" />
-      </list>
-    </recent_temporary>
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
@@ -81,49 +98,20 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state x="1326" y="346" width="224" height="318" key="#File_Watchers" timestamp="1597120264535">
+    <state x="1086" y="87" width="658" height="427" key="EditFileWatcherDialog" timestamp="1597215981571">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1326" y="346" width="224" height="318" key="#File_Watchers/0.0.1920.1080@0.0.1920.1080" timestamp="1597120264535" />
-    <state x="753" y="346" width="404" height="319" key="#Go_Modules" timestamp="1597120647876">
+    <state x="1086" y="87" width="658" height="427" key="EditFileWatcherDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1597215981571" />
+    <state x="926" y="-20" key="SettingsEditor" timestamp="1597215983440">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="753" y="346" width="404" height="319" key="#Go_Modules/0.0.1920.1080@0.0.1920.1080" timestamp="1597120647876" />
-    <state x="416" y="167" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597122036381">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="416" y="167" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1597122036381" />
-    <state x="1086" y="251" width="658" height="427" key="EditFileWatcherDialog" timestamp="1597120238253">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="1086" y="251" width="658" height="427" key="EditFileWatcherDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1597120238253" />
-    <state width="352" height="156" key="Git.Branch.Popup" timestamp="1597122246596">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="352" height="156" key="Git.Branch.Popup/0.0.1920.1080@0.0.1920.1080" timestamp="1597122246596" />
-    <state width="594" height="284" key="GridCell.Tab.0.bottom" timestamp="1597122549366">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="594" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1597122549366" />
-    <state width="594" height="284" key="GridCell.Tab.0.center" timestamp="1597122549366">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="594" height="284" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1597122549366" />
-    <state width="594" height="284" key="GridCell.Tab.0.left" timestamp="1597122549366">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="594" height="284" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1597122549366" />
-    <state width="594" height="284" key="GridCell.Tab.0.right" timestamp="1597122549366">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="594" height="284" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1597122549366" />
-    <state x="924" y="124" key="SettingsEditor" timestamp="1597120304999">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="924" y="124" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1597120304999" />
+    <state x="926" y="-20" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1597215983440" />
   </component>
 </project>
