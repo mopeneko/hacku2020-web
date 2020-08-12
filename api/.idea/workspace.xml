@@ -36,37 +36,46 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ccc7e0b-0b87-450e-8e32-07dc1d3d9116" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api/repository/heart_rate_repository.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="58e39966-6dff-4cdf-9039-a366d3599bd5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/api.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/repository/heart_rate_repository_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/hacku2020-web.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/watcherTasks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Go File" />
-      </list>
-    </option>
-  </component>
   <component name="GOROOT" path="/usr/lib/go" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
-  <component name="ProjectId" id="1fzGmghoQhaQfUmfeIVmBflrnC0" />
+  <component name="ProjectId" id="1fzLM5sHCzAJMDWvanwxdZ10PAS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
@@ -89,14 +98,20 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="1088" y="107" width="658" height="427" key="EditFileWatcherDialog" timestamp="1597214634321">
+    <state x="1086" y="87" width="658" height="427" key="EditFileWatcherDialog" timestamp="1597215981571">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1088" y="107" width="658" height="427" key="EditFileWatcherDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1597214634321" />
-    <state x="926" y="-20" key="SettingsEditor" timestamp="1597214635787">
+    <state x="1086" y="87" width="658" height="427" key="EditFileWatcherDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1597215981571" />
+    <state x="926" y="-20" key="SettingsEditor" timestamp="1597215983440">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="926" y="-20" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1597214635787" />
+    <state x="926" y="-20" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1597215983440" />
   </component>
 </project>
