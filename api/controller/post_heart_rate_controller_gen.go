@@ -17,8 +17,8 @@ func NewPostHeartRateController() *PostHeartRateController {
 }
 
 // PostHeartRate
-// @Summary WIP
-// @Description WIP
+// @Summary Save heart rate
+// @Description Save heart rate to *repository.HeartRateRepository
 // @Accept json
 // @Produce json
 // @Param Count body integer WIP:${isRequire} WIP:${description}
@@ -28,5 +28,10 @@ func NewPostHeartRateController() *PostHeartRateController {
 func (p *PostHeartRateController) PostHeartRate(
 	ctx context.Context, c echo.Context, req *PostHeartRateRequest,
 ) (res *PostHeartRateResponse, err error) {
-	panic("require implements.")
+	res = new(PostHeartRateResponse)
+
+	heartRateRepository.Set(req.Count)
+
+	res.Status = true
+	return
 }
