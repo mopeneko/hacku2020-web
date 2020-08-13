@@ -2,7 +2,7 @@ name: reviewdog
 on: [pull_request]
 
 jobs:
-  lint:
+  lint-api:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -16,10 +16,34 @@ jobs:
       - name: Execute api_gen
         run: server_generator ./controller
         working-directory: api
-      - uses: reviewdog/action-golangci-lint@v1
+      - name: golangci-lint
+        uses: reviewdog/action-golangci-lint@v1
         env:
           GOROOT: ""
         with:
-          github_token: ${{ secrets.github_token }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           golangci_lint_flags: "--config=../.github/.golangci.yml"
           workdir: api
+
+  lint-frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Get cache dir path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+      - name: Cache node_modules
+        uses: actions/cache@v2
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+      - run: yarn install --frozen-lockfile
+      - name: eslint
+        uses: reviewdog/action-eslint@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          reporter: github-pr-check
+          eslint_flags: './**/*.{vue,ts,js}'
+          workdir: frontend
