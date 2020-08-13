@@ -22,6 +22,7 @@ jobs:
           GOROOT: ""
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          reporter: github-pr-review
           golangci_lint_flags: "--config=../.github/.golangci.yml"
           workdir: api
 
@@ -44,6 +45,6 @@ jobs:
         uses: reviewdog/action-eslint@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          reporter: github-pr-check
+          reporter: github-pr-review
           eslint_flags: './**/*.{vue,ts,js}'
           workdir: frontend
