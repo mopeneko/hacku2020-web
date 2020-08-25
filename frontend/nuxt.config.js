@@ -1,5 +1,8 @@
 import colors from 'vuetify/es5/util/colors'
 
+const environment = process.env.NODE_ENV || 'development'
+const env = require(`./env/${environment}.ts`)
+
 export default {
   /*
    ** Nuxt rendering mode
@@ -16,7 +19,7 @@ export default {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
-    titleTemplate: '%s - ' + process.env.npm_package_name,
+    titleTemplate: '%s - ' + 'Dashboard',
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
@@ -85,4 +88,6 @@ export default {
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {},
+
+  env,
 }
