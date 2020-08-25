@@ -2,7 +2,11 @@
   <v-container>
     <v-row justify="center" justify-md="start">
       <v-col cols="12" md="3">
-        <dashboard-item ref="heartRateChart" title="Heart Rate" :value="heartRate" />
+        <dashboard-item
+          ref="heartRateChart"
+          title="Heart Rate"
+          :value="heartRate"
+        />
       </v-col>
     </v-row>
   </v-container>
@@ -10,7 +14,6 @@
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
-import axios from 'axios'
 import DashboardItem from '@/components/DashboardItem.vue'
 import { APIClient } from '@/api/api_client'
 import { GetHeartRateRequest } from '@/api/classes/GetHeartRateRequest'
