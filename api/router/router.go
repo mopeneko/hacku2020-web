@@ -16,6 +16,7 @@ func init() {
 	router = echo.New()
 
 	router.Use(middleware.Recover())
+	router.Use(middleware.CORS())
 
 	controller.Bootstrap(ctx, router, nil)
 }
